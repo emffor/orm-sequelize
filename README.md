@@ -113,3 +113,15 @@ _Conectar sequelize com banco por seed_
 - no terminal mysql
   `$ show tables; `
   `$ describe Matriculas; `
+
+#### Aula 5 - Populando outras tabelas
+
+1 - `$ npx sequelize-cli seed:generate --name demo-nivel`
+2 - `$ npx sequelize-cli seed:generate --name demo-turmas`
+3 - `$ npx sequelize-cli seed:generate --name demo-matriculas`
+
+- Adicionando rodas as informações
+  `$ npx sequelize-cli db:seed:all`
+
+- Buscas tabelas
+  `$ select * from Matriculas;`
