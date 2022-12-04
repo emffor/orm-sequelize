@@ -51,3 +51,14 @@
 _Conectar sequelize com banco por seed_
 
 - `$ npx sequelize-cli db:seed:all`
+
+## Aula 03 - Atividade 03 - Criando o CONTROLLER
+
+1 - Criar controller (todo controller precisa de uma rota).
+
+**CRUD**
+
+- (C = CRIA NOVOS REGISTROS)
+- (R = LER OS REGISTROS)
+- (U = ATUALIZA OS RECURSOS)
+- (D = DELETA RECURSOS)
