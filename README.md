@@ -81,3 +81,19 @@ _Conectar sequelize com banco por seed_
 * criar controller método.
 * adicionar ou avisar em uma rota já existente que apareceu uma nova rota.
 * testar no postman a rota com parâmetro.
+
+#### Aula 05 - Atividade 02 - Criando mais tabelas
+
+**OBS:** sempre criar primeiro tabelas que não possuem chave estrangeiras, apenas chave primaria.
+
+1. Cria novo modelo e migração Niveis.
+
+`$ npx sequelize-cli model:create --name Niveis --attributes descr_nivel:string`
+
+2. Criar tabela Turmas
+
+`$ npx sequelize-cli model:create --name Turmas --attributes data_inicio:dateonly`
+
+3. Criar tabela Matriculas
+
+`$ npx sequelize-cli model:create --name Turmas --attributes status:string`
