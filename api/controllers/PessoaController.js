@@ -23,6 +23,17 @@ class PessoaController {
       return res.status(500).json(error.message); // Retorna o erro
     }
   }
+
+  // Método que cria uma nova pessoa
+  static async criaPessoa(req, res) {
+    const novaPessoa = req.body; // Pega o corpo da requisição e armazena na variável novaPessoa { nome: "João", ativo: true, email: "teste@teste.com", etc... }
+    try {
+      const novaPessoaCriada = await database.Pessoas.create(novaPessoa); // Faz a criação no banco de dados
+      return res.status(200).json(novaPessoaCriada); // Retorna o resultado da criação
+    } catch (error) {
+      return res.status(500).json(error.message); // Retorna o erro
+    }
+  }
 }
 
 module.exports = PessoaController;
