@@ -4,8 +4,12 @@ module.exports = (sequelize, DataTypes) => {
   class Matriculas extends Model {
     static associate(models) {
       // define association here
-      Matriculas.belongsTo(models.Pessoas); // Adiciona a associação de 1:1 - pertence a uma pessoa
-      Matriculas.belongsTo(models.Turmas); // Adiciona a associação de 1:1 - pertence a uma turma
+      Matriculas.belongsTo(models.Pessoas, {
+        foreignKey: "estudante_id",
+      }); // Adiciona a associação de 1:1 - pertence a uma pessoa
+      Matriculas.belongsTo(models.Turmas, {
+        foreignKey: "turma_id",
+      }); // Adiciona a associação de 1:1 - pertence a uma turma
     }
   }
   Matriculas.init(

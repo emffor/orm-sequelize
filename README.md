@@ -101,3 +101,15 @@ _Conectar sequelize com banco por seed_
 #### Aula 5 - Atividade 4 Fazendo Associações
 
 => As associações são feitas em models.
+
+#### Aula 5 - Atividade 6 Referenciando Tabelas
+
+=> referenciando tabelas na migrations as chaves estrangeiras.
+
+- Criar tabelas no banco - passar migrates para o banco.
+
+`$ npx sequelize-cli db:migrate`
+
+- no terminal mysql
+  `$ show tables; `
+  `$ describe Matriculas; `
