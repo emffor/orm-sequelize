@@ -4,5 +4,6 @@ const PessoaController = require("../controllers/PessoaController"); // Importa 
 const router = Router(); // Inicializa o Router
 
 router.get("/pessoas", PessoaController.pegaTodasAsPessoas); // Define a rota e o método que será chamado
+router.get("/pessoas/:id", PessoaController.pegaUmaPessoa); // Define a rota e o método que será chamado
 
 module.exports = router; // Exporta o router

@@ -73,3 +73,11 @@ _Conectar sequelize com banco por seed_
 1 - Criar controller (todo controller precisa de uma rota).
 2 - Criar Rotas.
 3 - Organizando e definindo a primeira rota.
+
+#### Aula 04 - Atividade 02 - Métodos CRUD.
+
+- PASSO A PASSO
+
+* criar controller método.
+* adicionar ou avisar em uma rota já existente que apareceu uma nova rota.
+* testar no postman a rota com parâmetro.

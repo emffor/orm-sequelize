@@ -10,6 +10,19 @@ class PessoaController {
       return res.status(500).json(error.message); // Retorna o erro
     }
   }
+
+  // Método que retorna uma pessoa específica
+  static async pegaUmaPessoa(req, res) {
+    const { id } = req.params; // Pega o id da pessoa que está sendo buscada
+    try {
+      const umaPessoa = await database.Pessoas.findOne({
+        where: { id: Number(id) },
+      }); // Faz a busca no banco de dados
+      return res.status(200).json(umaPessoa); // Retorna o resultado da busca
+    } catch (error) {
+      return res.status(500).json(error.message); // Retorna o erro
+    }
+  }
 }
 
 module.exports = PessoaController;
