@@ -35,7 +35,7 @@
 - `$ show tables;`
 - `$ describe Pessoas;`
 
-## Aula 02 - Atividade 08 - Populando o banco de dados
+#### Aula 02 - Atividade 08 - Populando o banco de dados
 
 **Criar pessoa no banco**
 1 - `$ use escola_ingles;`
@@ -52,7 +52,7 @@ _Conectar sequelize com banco por seed_
 
 - `$ npx sequelize-cli db:seed:all`
 
-## Aula 03 - Atividade 03 - Criando o CONTROLLER
+#### Aula 03 - Atividade 03 - Criando o CONTROLLER
 
 1 - Criar controller (todo controller precisa de uma rota).
 
@@ -62,3 +62,8 @@ _Conectar sequelize com banco por seed_
 - (R = LER OS REGISTROS)
 - (U = ATUALIZA OS RECURSOS)
 - (D = DELETA RECURSOS)
+
+#### Aula 03 - Atividade 05 - Organizando Rotas
+
+1 - Criar controller (todo controller precisa de uma rota).
+2 - Criar Rotas.
