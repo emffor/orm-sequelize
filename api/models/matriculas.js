@@ -1,23 +1,21 @@
-'use strict';
-const {
-  Model
-} = require('sequelize');
+"use strict";
+const { Model } = require("sequelize");
 module.exports = (sequelize, DataTypes) => {
   class Matriculas extends Model {
-    /**
-     * Helper method for defining associations.
-     * This method is not a part of Sequelize lifecycle.
-     * The `models/index` file will call this method automatically.
-     */
     static associate(models) {
       // define association here
+      Matriculas.belongsTo(models.Pessoas); // Adiciona a associação de 1:1 - pertence a uma pessoa
+      Matriculas.belongsTo(models.Turmas); // Adiciona a associação de 1:1 - pertence a uma turma
     }
   }
-  Matriculas.init({
-    status: DataTypes.STRING
-  }, {
-    sequelize,
-    modelName: 'Matriculas',
-  });
+  Matriculas.init(
+    {
+      status: DataTypes.STRING,
+    },
+    {
+      sequelize,
+      modelName: "Matriculas",
+    }
+  );
   return Matriculas;
 };

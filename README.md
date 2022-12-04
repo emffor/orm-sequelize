@@ -97,3 +97,7 @@ _Conectar sequelize com banco por seed_
 3. Criar tabela Matriculas
 
 `$ npx sequelize-cli model:create --name Turmas --attributes status:string`
+
+#### Aula 5 - Atividade 4 Fazendo Associações
+
+=> As associações são feitas em models.
