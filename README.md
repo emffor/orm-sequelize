@@ -67,3 +67,9 @@ _Conectar sequelize com banco por seed_
 
 1 - Criar controller (todo controller precisa de uma rota).
 2 - Criar Rotas.
+
+#### Aula 03 - Atividade 07 - Definindo primeira rota.
+
+1 - Criar controller (todo controller precisa de uma rota).
+2 - Criar Rotas.
+3 - Organizando e definindo a primeira rota.
