@@ -34,3 +34,16 @@
 - `$ use escola_ingles;`
 - `$ show tables;`
 - `$ describe Pessoas;`
+
+## Aula 02 - Atividade 08 - Populando o banco de dados
+
+**Criar pessoa no banco**
+1 - `$ use escola_ingles;`
+2 - `$ insert into Pessoas (nome,ativo,email,role,createdAt,updatedAt) values ("Carlas Gomes",1,"carla@gmail.com","estudante",NOW(),NOW());`
+3 - `$ select * from Pessoas;`
+
+**Criar pessoa no banco - Usar o seeders direto do sequelize**
+`$ npx sequelize-cli seed:generate --name demo-pessoa`
+
+_Conectar sequelize com banco por seed_
+`$ npx sequelize-cli db:seed:all`
