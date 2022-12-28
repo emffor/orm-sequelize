@@ -114,7 +114,7 @@ _Conectar sequelize com banco por seed_
   `$ show tables; `
   `$ describe Matriculas; `
 
-#### Aula 5 - Populando outras tabelas
+#### Aula 5 - Atividade 7 Populando outras tabelas
 
 1 - `$ npx sequelize-cli seed:generate --name demo-nivel`
 2 - `$ npx sequelize-cli seed:generate --name demo-turmas`
@@ -125,3 +125,10 @@ _Conectar sequelize com banco por seed_
 
 - Buscas tabelas
   `$ select * from Matriculas;`
+
+==== iniciar na aula 6 - proxima aula
+
+## Comando Uteis
+
+- Desfazer Operações
+  `npx sequelize-cli db:migrate:undo`
